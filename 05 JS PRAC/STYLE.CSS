@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(135deg, #00b4db, #0083b0);
+    height: 100vh;
+}
+.container{
+    width: 400px;
+    background-color: white;
+    padding: 50px 30px; 
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;    
+    box-shadow: 25px 25px 50px rgba(0,0,0,0.5),
+                -25px -25px 50px rgba(255,255,255,0.5);
+                color: black;
+                animation: containeranimation 2s ;
+
+}
+ @keyframes containeranimation {
+    0%{
+        opacity: 0;
+        transform: translate(-50%, -60%);
+    }
+    100%{
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+label,
+input,
+#error-msg{
+    font-family: sans-serif;
+    
+}
+
+label{
+    display: inline-block;
+    margin-bottom: 10px;
+    Font-weight: 500;
+}
+
+input[type="email"]{
+    display: inline-block;
+    border: 2px solid #d1d3d4;
+    width: 88%;
+    height: 50px;
+    border-radius: 5px;
+    outline: none;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+    padding: 5px; 
+}
+
+#icon{
+    position: relative;
+    float: right;
+    height:50px;
+    font-size: 25px;
+    padding-top:10px;
+}
+#erorr-msg{
+    color: #ff2851;
+    font-size: 4px;
+    margin-top: 10px;
+    display: none;
+}
